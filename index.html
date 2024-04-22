@@ -20,7 +20,7 @@
     <meta property="og:type" content="website" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://rodaagil.agile.thalamus.digital/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
     <style>
       .accordion-header button {
         padding: calc(var(--bs-accordion-btn-padding-y) - 8px) 
@@ -223,18 +223,17 @@
     
     <input type="file" id="thefile" style="display: none" />
 
-    <!-- Javascripts -->
-    <!-- Bootstrap -->
-    <script type="text/javascript" src="https://rodaagil.agile.thalamus.digital/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="./bootstrap.min.js"></script>
 
-    <!-- XLS -->
-    <script type="text/javascript" src="https://rodaagil.agile.thalamus.digital/js/shim.min.js"></script>
-    <script type="text/javascript" src="https://rodaagil.agile.thalamus.digital/js/xlsx.full.min.js"></script>
-    <!-- Local -->
-    <script type="text/javascript" src="https://rodaagil.agile.thalamus.digital/js/xlssupport.js"></script>
-    <script type="text/javascript" src="https://rodaagil.agile.thalamus.digital/js/rodaagilchart.js"></script>
-
-    <script>
+    
+    <script type="text/javascript" src="./shim.min.js"></script>
+    <script type="text/javascript" src="./xlsx.full.min.js"></script>
+    
+    <script type="text/javascript" src="./xlssupport.js"></script>
+    <script type="text/javascript" src="./rodaagilchart.js"></script>
+    <script type="text/javascript" src="./roda.js"> </script>
+    <!-- <script>
       var formEditor = document.querySelector("#graph-editor");
       var currentDate = new Date();
       var chartProps = {
@@ -620,6 +619,6 @@
       makeForm(chartProps);
       loadFormValues();
       draw(canvasShow, chartProps);
-    </script>
+    </script> -->
   </body>
 </html>
