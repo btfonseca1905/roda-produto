@@ -9,7 +9,7 @@ var imgData = canvasOut.toDataURL(); // por padrÃ£o, a imagem Ã© PNG
 var fontFamily = "Roboto";
 
 var chartValues = {
-  fontTitle: "0px " + fontFamily,
+  fontTitle: "10px " + fontFamily,
   startAngle: -0.5 * Math.PI,
   currentAngle: -0.5 * Math.PI,
   sliceAngle: (1 / 20) * 2 * Math.PI,
@@ -47,9 +47,9 @@ function makeScorePath(centerX, centerY, radius, startAngle, endAngle) {
 
   return path;
 }
-
+// todo: cor alterada
 function drawBorder(cx, width, height) {
-  cx.fillStyle = "white";
+  cx.fillStyle = "#F5F5F5";
   cx.strokeStyle = chartProps.colors.text;
 
   cx.fillRect(0, 0, width, height);
@@ -74,7 +74,7 @@ function drawScore(cx, chartProps) {
       if (result.value > 5) result.value = 5;
       if (result.value < 1) result.value = 1;
 
-      color = result.value >= i ? colors[result.value - 1] : "white";
+      color = result.value >= i ? colors[result.value - 1] : "#F5F5F5";
 
       cx.fillStyle = color;
       cx.strokeStyle = chartProps.colors.text;
@@ -131,7 +131,7 @@ function drawLines(cx, chartProps) {
 
   chartProps.itens.forEach(function (result) {
     cx.beginPath();
-    cx.strokeStyle = "white";
+    cx.strokeStyle = "#F5F5F5";
 
     cx.arc(
       chartValues.centerX,
@@ -152,7 +152,7 @@ function drawHeaders(cx, chartProps) {
   const { width, height } = chartValues;
   chartValues;
 
-  // Textos do grÃ¡fico
+  // Textos do grafico
   cx.font = chartValues.fontTitle;
   cx.fillStyle = chartProps.colors.text;
 
