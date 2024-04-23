@@ -10,7 +10,7 @@ var fontFamily = "Roboto";
 const background = 'white';
 
 var chartValues = {
-  fontTitle: "10px " + fontFamily,
+  fontTitle: "0px " + fontFamily,
   startAngle: -0.5 * Math.PI,
   currentAngle: -0.5 * Math.PI,
   sliceAngle: (1 / 20) * 2 * Math.PI,
