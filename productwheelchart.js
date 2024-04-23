@@ -1,11 +1,8 @@
-/**
- * Existem muitos POGs aqui.
- */
 
 var results = [];
 var canvasShow = document.querySelector("#canvas-show");
 var canvasOut = document.querySelector("#canvas-out");
-var imgData = canvasOut.toDataURL(); // por padrÃ£o, a imagem Ã© PNG
+var imgData = canvasOut.toDataURL();
 var fontFamily = "Roboto";
 const background = 'white';
 
@@ -21,7 +18,6 @@ var chartValues = {
   width: 0,
 };
 
-//
 function loadProps(chartProps) {
   chartProps.itens = chartProps.groups.map((curr) => curr.itens).flat();
 }
@@ -48,7 +44,7 @@ function makeScorePath(centerX, centerY, radius, startAngle, endAngle) {
 
   return path;
 }
-// todo: cor alterada
+
 function drawBorder(cx, width, height) {
   cx.fillStyle = background;
   cx.strokeStyle = chartProps.colors.text;
@@ -88,7 +84,6 @@ function drawScore(cx, chartProps) {
         chartValues.currentAngle,
         chartValues.currentAngle + chartValues.sliceAngle
       );
-      //cx.isPointInPath(circle, event.offsetX, event.offsetY);
 
       cx.fill(path);
       cx.stroke(path);
@@ -107,7 +102,7 @@ function drawLines(cx, chartProps) {
       if (count == totalItens - 1) {
         var lineWidth = 4;
       } else {
-        var lineWidth = 1;
+        var lineWidth = 1.2;
       }
 
       cx.beginPath();
@@ -235,7 +230,7 @@ function splitText(txt) {
 
 function drawTitles(cx, chartProps) {
   // Cultura
-  cx.font = 0.015 * chartValues.width + "px " + fontFamily;
+  cx.font = 0.018 * chartValues.width + "px " + fontFamily;
   cx.fillStyle = chartProps.colors.text;
 
   for (var key in chartProps.itens) {
@@ -248,7 +243,7 @@ function drawTitles(cx, chartProps) {
 
       var angle =
         key * chartValues.sliceAngle +
-        Math.PI * 1.5 +
+        Math.PI * 1.8 +
         chartValues.sliceAngle * 0.02 +
         keyTxt * 0.005;
       var distance =
