@@ -7,6 +7,7 @@ var canvasShow = document.querySelector("#canvas-show");
 var canvasOut = document.querySelector("#canvas-out");
 var imgData = canvasOut.toDataURL(); // por padrÃ£o, a imagem Ã© PNG
 var fontFamily = "Roboto";
+const background = 'white';
 
 var chartValues = {
   fontTitle: "10px " + fontFamily,
@@ -49,7 +50,7 @@ function makeScorePath(centerX, centerY, radius, startAngle, endAngle) {
 }
 // todo: cor alterada
 function drawBorder(cx, width, height) {
-  cx.fillStyle = "#F5F5F5";
+  cx.fillStyle = background;
   cx.strokeStyle = chartProps.colors.text;
 
   cx.fillRect(0, 0, width, height);
@@ -74,7 +75,7 @@ function drawScore(cx, chartProps) {
       if (result.value > 5) result.value = 5;
       if (result.value < 1) result.value = 1;
 
-      color = result.value >= i ? colors[result.value - 1] : "#F5F5F5";
+      color = result.value >= i ? colors[result.value - 1] : background;
 
       cx.fillStyle = color;
       cx.strokeStyle = chartProps.colors.text;
@@ -131,7 +132,7 @@ function drawLines(cx, chartProps) {
 
   chartProps.itens.forEach(function (result) {
     cx.beginPath();
-    cx.strokeStyle = "#F5F5F5";
+    cx.strokeStyle = background;
 
     cx.arc(
       chartValues.centerX,
