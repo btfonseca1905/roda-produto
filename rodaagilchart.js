@@ -158,7 +158,7 @@ function drawHeaders(cx, chartProps) {
 
   if (chartProps.showTitle) {
     cx.fillText(
-      chartProps.time || "Informe um tÃ­tulo",
+      chartProps.time || "Informe um titulo",
       width * 0.0125,
       height * 0.038461538461538464
     );
