@@ -35,7 +35,7 @@ var formEditor = document.querySelector("#graph-editor");
             ],
           },
           {
-            title: "Business",
+            title: "Product",
             itens: [
               { title: "Aculturamento", value: 1 },
               { title: "Gestão 3.0", value: 1 },
