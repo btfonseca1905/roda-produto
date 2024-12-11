@@ -1,0 +1,58 @@
+{
+    "time": "",
+    "date": "",
+    "drawborder": false,
+    "showTitle": true,
+    "showDate": true,
+    "showSubtitles": false,
+    "colors": {
+      "text": "#002c5b",
+      "min": "#ed1566",
+      "med": "#ffc002",
+      "max": "#02ff1a"
+    },
+    "groups": [
+      {
+        "title": "Discovery",
+        "itens": [
+          { "title": "Customer Centric", "value": 0 },
+          { "title": "Design Thinking", "value": 0 },
+          { "title": "Outras Metodologias", "value": 0 },
+          { "title": "UX & Usabilidade", "value": 0 },
+          { "title": "Definição de Roadmap", "value": 0 }
+        ]
+      },
+      {
+        "title": "Delivery",
+        "itens": [
+          { "title": "Agilidade", "value": 0 },
+          { "title": "Scrum", "value": 0 },
+          { "title": "Dual Track", "value": 0 },
+          { "title": "Tecnologia", "value": 0 },
+          { "title": "Risco", "value": 0 }
+        ]
+      },
+      {
+        "title": "Business",
+        "itens": [
+          { "title": "Aculturamento", "value": 0 },
+          { "title": "TD", "value": 0 },
+          { "title": "Gestão 3.0", "value": 0 },
+          { "title": "OKR", "value": 0 },
+          { "title": "Comunicação", "value": 0 }
+        ]
+      },
+      {
+        "title": "Product",
+        "itens": [
+          { "title": "Cultura", "value": 0 },
+          { "title": "Product Data", "value": 0 },
+          { "title": "Product Marketing", "value": 0 },
+          { "title": "Leadership", "value": 0 },
+          { "title": "Cross Vision", "value": 0 }
+        ]
+      }
+    ],
+    "itens": []
+  }
+  

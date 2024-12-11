@@ -1,4 +1,4 @@
-var formEditor = document.querySelector("#graph-editor");
+      var formEditor = document.querySelector("#graph-editor");
       var currentDate = new Date();
       var chartProps = {
         time: "",
@@ -17,41 +17,41 @@ var formEditor = document.querySelector("#graph-editor");
           {
             title: "Discovery",
             itens: [
-              { title: "Customer Centric", value: 1 },
-              { title: "Design Thinking", value: 1 },
-              { title: "Outras Metodologias", value: 1 },
-              { title: "UX & Usabilidade", value: 1 },
-              { title: "Definição de Roadmap", value: 1 },
+              { title: "Customer Centric", value: 0 },
+              { title: "Design Thinking", value: 0 },
+              { title: "Outras Metodologias", value: 0 },
+              { title: "UX & Usabilidade", value: 0 },
+              { title: "Definição de Roadmap", value: 0 },
             ],
           },
           {
             title: "Delivery",
             itens: [
-              { title: "Agilidade", value: 1 },
-              { title: "Scrum", value: 1 },
-              { title: "Dual Track", value: 1 },
-              { title: "Tecnologia", value: 1 },
-              { title: "Risco", value: 1 },
+              { title: "Agilidade", value: 0 },
+              { title: "Scrum", value: 0 },
+              { title: "Dual Track", value: 0 },
+              { title: "Tecnologia", value: 0 },
+              { title: "Risco", value: 0 },
             ],
           },
           {
             title: "Business",
             itens: [
-              { title: "Aculturamento", value: 1 },
-              { title: "TD", value: 1 },
-              { title: "Gestão 3.0", value: 1 },
-              { title: "OKR", value: 1 },
-              { title: "Comunicação", value: 1 },
+              { title: "Aculturamento", value: 0 },
+              { title: "TD", value: 0 },
+              { title: "Gestão 3.0", value: 0 },
+              { title: "OKR", value: 0 },
+              { title: "Comunicação", value: 0 },
             ],
           },
           {
             title: "Product",
             itens: [
-              { title: "Cultura", value: 1 },
-              { title: "Product Data", value: 1 },
-              { title: "Product Marketing", value: 1 },
-              { title: "Leadership", value: 1 },
-              { title: "Cross Vision", value: 1 },
+              { title: "Cultura", value: 0 },
+              { title: "Product Data", value: 0 },
+              { title: "Product Marketing", value: 0 },
+              { title: "Leadership", value: 0 },
+              { title: "Cross Vision", value: 0 },
             ],
           },
         ],
