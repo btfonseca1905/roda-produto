@@ -1,6 +1,9 @@
       var formEditor = document.querySelector("#graph-editor");
       var currentDate = new Date();
-      var chartProps = {
+      const dataset = getParam('dataset');
+      var chartProps1 = await getData(wheelType);
+      var chartProps =
+      {
         time: "",
         date: "",
         drawborder: false,
@@ -74,6 +77,25 @@
         (currentDate.getDate() < 10
           ? "0" + currentDate.getDate()
           : currentDate.getDate());
+      
+      function getParam(param){
+        return new URLSearchParams(window.location.search).get(param);
+      }
+
+      async function getData(dataset) {
+        const url = `https://raw.githubusercontent.com/btfonseca1905/roda-produto/refs/heads/main/dataset/${dataset}.json`;
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error(`Response status: ${response.status}`);
+          }
+      
+          const json = await response.json();
+          return json;
+        } catch (error) {
+          console.error(error.message);
+        }
+      }
 
       function makeForm(chartProps) {
         document
