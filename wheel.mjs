@@ -220,7 +220,6 @@ function addGroupItem() {
   draw(canvasShow, chartProps);
 }
 
-//
 function loadProps(chartProps) {
   chartProps.itens = chartProps.groups.map((curr) => curr.itens).flat();
 }
@@ -272,7 +271,7 @@ function drawScore(cx) {
   for (var i = 5; i > 0; i--) {
     chartProps.itens.forEach(function (result) {
       if (result.value > 5) result.value = 5;
-      if (result.value < 1) result.value = 1;
+      if (result.value < 0) result.value = 0;
 
       cx.fillStyle = result.value >= i ? colors[result.value - 1] : "white";
       cx.strokeStyle = chartProps.colors.text;

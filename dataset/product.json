@@ -14,6 +14,7 @@
     "groups": [
       {
         "title": "Mentalidade Ágil",
+        "showSubtitles": "",
         "itens": [
           { "title": "Você sabe como implementar e conduzir o processo de Dual Track e Triple Track na Gestão de Produtos? ", "value": 0 },
           { "title": "Design Thinking", "value": 0 },
@@ -24,6 +25,7 @@
       },
       {
         "title": "Delivery",
+        "showSubtitles": "",
         "itens": [
           { "title": "Agilidade", "value": 0 },
           { "title": "Scrum", "value": 0 },
@@ -44,6 +46,7 @@
       },
       {
         "title": "Product",
+        "showSubtitles": "",
         "itens": [
           { "title": "Cultura", "value": 0 },
           { "title": "Product Data", "value": 0 },
